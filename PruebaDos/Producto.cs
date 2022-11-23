@@ -35,7 +35,36 @@ namespace PruebaDos
         #region Metodo
         public void MostrarProducto()
         {
-
+        string strDisponible;
+            if (Disponible)
+            {
+                strDisponible = "Sí";
+            }
+            else
+                strDisponible = "No";
+            
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("Codigo:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(CodigoProducto);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("|Cliente:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(ClienteId);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("|FechaIngreso:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(FechaIngreso);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("|Descripcion:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(Descripcion);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("|Valor Aproximado:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(ValorAproximado);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("|Preferencias:");
         }
         #endregion
 
